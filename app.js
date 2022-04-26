@@ -18,8 +18,10 @@ app.use(express.static("public"));
 
 
 
-
-
+// Route Home page
+app.get("/", function(req, res) {
+  res.render("home")
+});
 
 
 
